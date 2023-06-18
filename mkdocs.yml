@@ -134,3 +134,8 @@ nav:
   - 简介:
     - index.md
   
+  - 配置选项:
+    - vscode 配置: 配置选项/vscode 配置.md
+    - cmd 小脚本: 配置选项/cmd 小脚本.md
+  - MySQL:
+    - 入门命令: MySQL/入门命令.md
