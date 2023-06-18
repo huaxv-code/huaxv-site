@@ -115,6 +115,7 @@
             "typescript": ".ts"
         },
         "workbench.startupEditor": "none",
+        "editor.stickyScroll.enabled": true,
     }
     ```
 
