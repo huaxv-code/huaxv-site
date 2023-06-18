@@ -89,8 +89,6 @@
     ```bat
     @echo off
 
-    if exist equal.py del equal.py
-    copy %~dp0is_equal.py equal.py > nul
     copy %~dp0UseTime.py UseTime.py > nul
     copy %~dp0EncodePy.py EncodePy.py > nul
     if not exist in.txt type nul> in.txt
