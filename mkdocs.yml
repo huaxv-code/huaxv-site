@@ -1,9 +1,9 @@
 # pip install mkdocs-material
 # pip install mkdocs-glightbox
 
-site_name: 玉子爱做题
+site_name: 玉子的饼藏
 
-repo_url: https://github.com/huaxv-code/huaxv-problemset
+repo_url: https://github.com/huaxv-code/huaxv-site
 repo_name: 花续情愫缘 / huaxv-site
 
 markdown_extensions:
