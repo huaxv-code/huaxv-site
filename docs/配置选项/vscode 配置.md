@@ -122,6 +122,9 @@
         "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
         "cph.general.retainWebviewContext": true,
         "cph.general.ignoreSTDERROR": true,
+        "update.enableWindowsBackgroundUpdates": false,
+        "update.showReleaseNotes": false,
+        "extensions.autoCheckUpdates": false,
     }
     ```
 
