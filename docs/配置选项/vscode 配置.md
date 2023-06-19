@@ -7,7 +7,6 @@
         "editor.fontSize": 24,
         "terminal.integrated.fontSize": 24,
         "workbench.iconTheme": "material-icon-theme",
-        "workbench.colorTheme": "Visual Studio Dark - C++",
         "code-runner.executorMapByFileExtension": {
             ".yml": "push setting",
             ".md": "push $fileName",
@@ -118,13 +117,18 @@
         "editor.stickyScroll.enabled": true,
         "cph.general.defaultLanguage": "cpp",
         "cph.general.timeOut": 7000,
-        "cph.language.cpp.Args": "-w -std=c++14 -static -O2 -Wall -Wextra -Wl,--stack=549453824",
+        "cph.language.cpp.Args": "-w -std=c++20 -static -O2 -Wall -Wextra -Wl,--stack=549453824",
         "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
         "cph.general.retainWebviewContext": true,
         "cph.general.ignoreSTDERROR": true,
         "update.enableWindowsBackgroundUpdates": false,
         "update.showReleaseNotes": false,
         "extensions.autoCheckUpdates": false,
+        "workbench.colorTheme": "Community Material Theme Palenight",
+        "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+        "editor.fontLigatures": true,
+
+
     }
     ```
 
