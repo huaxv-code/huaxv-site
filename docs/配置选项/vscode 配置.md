@@ -116,6 +116,12 @@
         },
         "workbench.startupEditor": "none",
         "editor.stickyScroll.enabled": true,
+        "cph.general.defaultLanguage": "cpp",
+        "cph.general.timeOut": 7000,
+        "cph.language.cpp.Args": "-w -std=c++14 -static -O2 -Wall -Wextra -Wl,--stack=549453824",
+        "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
+        "cph.general.retainWebviewContext": true,
+        "cph.general.ignoreSTDERROR": true,
     }
     ```
 
