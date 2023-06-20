@@ -723,10 +723,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="动态规划伤脑筋" name="__tabbed_1" type="radio" /><input id="快读模板" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="动态规划伤脑筋">动态规划、伤脑筋</label><label for="快读模板">快读模板</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>如果我知道了第 <span class="arithmatex">\(k\)</span> 层的最近公共祖先是 <span class="arithmatex">\(gf\)</span>，那么对于第 <span class="arithmatex">\(k + 1\)</span> 层来说，<span class="arithmatex">\(gf\)</span> 也一定会是 <span class="arithmatex">\(k + 1\)</span> 层的祖先</p>
-<p>那么 <span class="arithmatex">\(k + 1\)</span> 层的祖先必定是 <span class="arithmatex">\(gf\)</span> 到 <span class="arithmatex">\(k + 1\)</span> 层中的某个节点，从 <span class="arithmatex">\(gf\)</span> 开始向下遍历这些节点，如果孩子节点的最大子节点的深度不能超过 <span class="arithmatex">\(k + 1\)</span> 层，也就说明这个节点最深也到达不了第 <span class="arithmatex">\(k + 1\)</span> 层；</p>
-<p>如果 <span class="arithmatex">\(gf\)</span> 有多个孩子节点(记为 <span class="arithmatex">\(sons\)</span>)的最大子节点深度超过 <span class="arithmatex">\(k + 1\)</span> 层，那么说明第 <span class="arithmatex">\(k + 1\)</span> 层的所有节点是由 <span class="arithmatex">\(gf\)</span> 的 <span class="arithmatex">\(sons\)</span> 节点发散出来的，可以确定第 <span class="arithmatex">\(k + 1\)</span> 层的祖先就是 <span class="arithmatex">\(gf\)</span></p>
-<p>如果 <span class="arithmatex">\(gf\)</span> 只有一个节点超过 <span class="arithmatex">\(k + 1\)</span> 层，那么这个节点也是第 <span class="arithmatex">\(k + 1\)</span> 层的公共祖先。</p>
+<p>如果我知道了第 <code>k</code> 层的最近公共祖先是 <code>gf</code>，那么对于第 <code>k + 1</code> 层来说，<code>gf</code> 也一定会是 <code>k + 1</code> 层的祖先</p>
+<p>那么 <code>k + 1</code> 层的祖先必定是 <code>gf</code> 到 <code>k + 1</code> 层中的某个节点，从 <code>gf</code> 开始向下遍历这些节点，如果孩子节点的最大子节点的深度不能超过 <code>k + 1</code> 层，也就说明这个节点最深也到达不了第 <code>k + 1</code> 层；</p>
+<p>如果 <code>gf</code> 有多个孩子节点(记为 <code>sons</code>)的最大子节点深度超过 <code>k + 1</code> 层，那么说明第 <code>k + 1</code> 层的所有节点是由 <code>gf</code> 的 <code>sons</code> 节点发散出来的，可以确定第 <code>k + 1</code> 层的祖先就是 <code>gf</code></p>
+<p>如果 <code>gf</code> 只有一个节点超过 <code>k + 1</code> 层，那么这个节点也是第 <code>k + 1</code> 层的公共祖先。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ll</span><span class="p">;</span>
