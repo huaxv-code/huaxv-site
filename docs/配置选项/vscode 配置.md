@@ -136,6 +136,7 @@
         },
         "update.mode": "none",
         "editor.tabCompletion": "on",
+        "editor.acceptSuggestionOnEnter": "off",
         // ----------------------------
 
 
