@@ -1452,7 +1452,7 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>时间复杂度：<span class="arithmatex">\(n\sqrt{n}\log(n)\)</span></p>
-<p>对询问的区间进行排序，从一个查询区间跃迁到另外一个查询区间，利用莫队四循环的写法跃迁，每跃迁一次的时间复杂度最大平均很有可能达到 <span class="arithmatex">\(\sqrt{n}\)</span>.</p>
+<p>对询问的区间进行排序，从一个查询区间跃迁到另外一个查询区间，利用莫队四循环的写法跃迁，每跃迁一次的时间复杂度最大平均很有可能达到 <span class="arithmatex">\(\sqrt{n}\log(n)\)</span>.</p>
 <p>用二分枚举前缀和查找第 <span class="arithmatex">\(k\)</span> 小，前缀和如何求？用树状数组，每求一次耗时 <span class="arithmatex">\(\log(n)\)</span>，二分可能要枚举 <span class="arithmatex">\(\log(n)\)</span> 次，所以每查询一次的时间复杂度：<span class="arithmatex">\(\log^2(n)\)</span></p>
 <p><span class="arithmatex">\(10 ^ 5\)</span> 次方级别的数据量需要 <span class="arithmatex">\(16\)</span> 秒才能求出，严重超时！</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
