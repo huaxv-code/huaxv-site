@@ -1,4 +1,4 @@
-# [分裂合并的堆搜索树 FHQ Treap](https://www.luogu.com.cn/problem/P3369)
+# [按权值分裂、合并的堆搜索树 FHQ Treap](https://www.luogu.com.cn/problem/P3369)
 
 所有操作都基于分裂合并！
 
