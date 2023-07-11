@@ -780,9 +780,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          树状数组+扫描法+二维偏序问题
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         树状数组+扫描法+二维偏序问题
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    树状数组 + 扫描法 + 二维偏序问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1543,6 +1574,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    树状数组 + 扫描法 + 二维偏序问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1560,9 +1606,7 @@
 
 
 <h1 id="_1"><a href="https://www.luogu.com.cn/problem/U47402">树状数组 + 扫描法 + 二维偏序问题</a></h1>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="树状数组--扫描法--二维偏序问题" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="树状数组--扫描法--二维偏序问题">树状数组 + 扫描法 + 二维偏序问题</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h2 id="_2">树状数组 + 扫描法 + 二维偏序问题</h2>
 <p>如何查找点 <span class="arithmatex">\((x_j, y_j) &lt;= (x_i, y_i)\)</span> 的个数问题？</p>
 <p>定义：<span class="arithmatex">\((x_j, y_j) &lt;= (x_i, y_i)\)</span> 表示为 <span class="arithmatex">\(x_j &lt;= x_i 且 y_j &lt;= y_i\)</span></p>
 <p>先按照 <span class="arithmatex">\(x\)</span> 排序，那么满足条件的必定满足 <span class="arithmatex">\(x_j &lt;= x_i\)</span>，可以用扫描法，扫描一个就插入一个进去，定义树状数组维护的是 <span class="arithmatex">\(y[N]\)</span> 的权值，查找此时比 <span class="arithmatex">\(y_i\)</span> 小的个数有多少个，查完后再把当前的 <span class="arithmatex">\(y_i\)</span> 增加进数组内。</p>
@@ -1638,9 +1682,6 @@
 <a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="p">}</span>
 </code></pre></div>
-</div>
-</div>
-</div>
 
 
 
