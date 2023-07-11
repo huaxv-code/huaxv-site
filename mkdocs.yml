@@ -162,6 +162,7 @@ nav:
     - 按权值分裂、合并的堆搜索树 FHQ Treap: 板子/按权值分裂、合并的堆搜索树 FHQ Treap.md
     - 按排名分裂、合并的堆搜索树 FHQ Treap: 板子/按排名分裂、合并的堆搜索树 FHQ Treap.md
     - 树的重心: 板子/树的重心.md
+    - 树上最近公共祖先 LCA: 板子/树上最近公共祖先 LCA.md
 
   - MySQL:
     - 入门命令: MySQL/入门命令.md
