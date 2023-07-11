@@ -161,6 +161,7 @@ nav:
     - vector 实现搜索树: 板子/vector 实现搜索树.md
     - 按权值分裂、合并的堆搜索树 FHQ Treap: 板子/按权值分裂、合并的堆搜索树 FHQ Treap.md
     - 按排名分裂、合并的堆搜索树 FHQ Treap: 板子/按排名分裂、合并的堆搜索树 FHQ Treap.md
+    - 树的重心: 板子/树的重心.md
 
   - MySQL:
     - 入门命令: MySQL/入门命令.md
