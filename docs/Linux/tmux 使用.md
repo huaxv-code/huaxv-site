@@ -74,9 +74,3 @@ tmux at -t desktop
 ### 调整屏幕
 
 `ctrl + (b, 方向键)`，根据方向键调整屏幕大小
-
-### 新建桌面
-
-`tmux desktop_1`，新建桌面 desktop_1
-
-### 
