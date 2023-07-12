@@ -35,7 +35,7 @@ tmux at -t desktop
 ---
 
 
-## window
+## **window**
 
 ### 创建 window
 
@@ -53,7 +53,7 @@ tmux at -t desktop
 
 ---
 
-## panl
+## **panl**
 
 ### 分左右两屏
 
