@@ -90,20 +90,20 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+      # toggle:
+      #   icon: material/brightness-7
+      #   name: Switch to dark mode
       primary: white
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-      primary: black
-      # accent: deep orange
-    # - accent: green
+    # # Palette toggle for dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4
+    #     name: Switch to light mode
+    #   primary: black
+    #   # accent: deep orange
+    # # - accent: green
 
   font:
     code: Roboto Mono
@@ -210,6 +210,7 @@ nav:
     - Linux 常见基本命令: Linux/Linux 常见基本命令.md
     - tmux 使用: Linux/tmux 使用.md
     - vim 使用手册: Linux/vim 使用手册.md
+    - bash 使用: Linux/bash 使用.md
     
     
   - 每日英语:
