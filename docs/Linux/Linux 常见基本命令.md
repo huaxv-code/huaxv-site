@@ -70,8 +70,8 @@ rm -r files # 删除文件夹 files
 ## 移动文件或文件夹 **mv**
 
 ```shell
-mv code demo        # 将 code 移动成 demo
-mv code demo/code   # 将 code 移动到 demo 文件夹下改名成 code
+mv /r code demo         # 将 code 移动成 demo
+mv /r code demo/code    # 将 code 移动到 demo 文件夹下改名成 code
 
 mv test.txt test.cpp    # 将 test.txt 移动到当前目录下并改名成 test.cpp
 ```
@@ -79,8 +79,8 @@ mv test.txt test.cpp    # 将 test.txt 移动到当前目录下并改名成 test
 ## 复制文件或文件夹 **cp**
 
 ```shell
-cp code demo        # 将 code 复制成 demo
-cp code demo/code   # 将 code 复制到 demo 文件夹下改名成 code
+cp /r code demo         # 将 code 复制成 demo
+cp /r code demo/code    # 将 code 复制到 demo 文件夹下改名成 code
 
 cp test.txt test.cpp    # 将 test.txt 复制到当前目录下并改名成 test.cpp
 ```
