@@ -58,7 +58,7 @@ void solve()
 		long long t = nd[1];
 		
 		if (d[u] > t)
-		{
+		{ // 我的这种写法，其实是 spfa 用优先队列的形式
 			d[u] = t;
 			for (long long i = g[u]; i; i = ne[i])
 			{
