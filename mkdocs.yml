@@ -168,7 +168,7 @@ nav:
     - targan 并查集+DFS 求最近公共祖先 LCA.md: 板子/targan 并查集+DFS 求最近公共祖先 LCA.md
     
     
-    - dijkstra 求最短路径: 板子/dijkstra 求最短路径.md
+    - dijkstra 求正权值最短路径: 板子/dijkstra 求正权值最短路径.md
 
   - MySQL:
     - 入门命令: MySQL/入门命令.md

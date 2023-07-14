@@ -1,4 +1,4 @@
-# [dijkstra 求最短路径](https://www.acwing.com/problem/content/852/)
+# [dijkstra 求正权值最短路径](https://www.acwing.com/problem/content/852/)
 
 从某点开始向周围辐射，每次选取队列中最近的节点，如果该节点到起点的路径长度有更新，那么继续从该点开始向周围辐射。
 
