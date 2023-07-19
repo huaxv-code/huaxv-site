@@ -165,7 +165,8 @@ nav:
     - 树的重心: 板子/树的重心.md
     - 树的直径: 板子/树的直径.md
     - 倍增法求最近公共祖先 LCA: 板子/倍增法求最近公共祖先 LCA.md
-    - targan 并查集+DFS 求最近公共祖先 LCA.md: 板子/targan 并查集+DFS 求最近公共祖先 LCA.md
+    - targan 并查集+DFS 求最近公共祖先 LCA: 板子/targan 并查集+DFS 求最近公共祖先 LCA.md
+    - 树链剖分+最近公共祖先: 板子/树链剖分+最近公共祖先.md
     
     
     - dijkstra 求正权值最短路径: 板子/dijkstra 求正权值最短路径.md
