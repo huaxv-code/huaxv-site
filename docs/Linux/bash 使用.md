@@ -127,5 +127,37 @@ echo ${a[2]}
 echo ${a[3]}
 echo ${a[4]}
 echo ${a[5]}
+
+echo ${a[*]} # 遍历整个数组
+
+echo ${#a[*]} # 获取整个数组的长度
 ```
 
+## 输入 **read**
+
+```shell
+>> read -p "please input your name: " name
+please input your name: huaxv
+>> echo $name
+huaxv 
+```
+
+## 格式化输出 **printf**
+
+```shell
+#! /bin/bash
+
+printf "please input your name: "
+read name
+
+printf "please input the value of \$a: "
+read a
+
+printf "please input the value of \$b: "
+read b
+
+printf "\n\nI think your name is: %s\n" $name
+printf "%5d*%5d=%5d\n" $a $b `expr $a '*' $b`
+```
+
+## 
