@@ -114,9 +114,18 @@ name=${email:0:5}
 
 ## 数组
 
-
-
 ```shell
 a=(1 2 "hello world")
 
+a[3]="c++"
+a[4]="java"
+a[5]="python"
+
+echo ${a[0]}
+echo ${a[1]}
+echo ${a[2]}
+echo ${a[3]}
+echo ${a[4]}
+echo ${a[5]}
 ```
+
