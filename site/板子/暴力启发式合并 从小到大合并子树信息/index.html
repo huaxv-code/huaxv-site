@@ -12,14 +12,14 @@
         <link rel="prev" href="../%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86%2B%E7%BA%BF%E6%AE%B5%E6%A0%91%20%E8%A7%A3%E5%86%B3%E8%B7%AF%E5%BE%84%E6%9C%80%E5%B0%8F%E8%BE%B9%E9%97%AE%E9%A2%98/">
       
       
-        <link rel="next" href="../%E5%88%86%E6%B2%BB%E9%80%92%E5%BD%92%E7%9A%84%E6%8A%80%E5%B7%A7%20%E5%90%AF%E5%8F%91%E5%BC%8F%E5%88%86%E8%A3%82/">
+        <link rel="next" href="../%E6%9A%B4%E5%8A%9B%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6%20%E4%BB%8E%E9%87%8D%E5%84%BF%E5%AD%90%E5%BC%80%E5%A7%8B%E5%90%88%E5%B9%B6/">
       
       <link rel="icon" href="../../img/头像.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
-        <title>暴力启发式合并 合并子树信息 - 玉子的饼藏</title>
+        <title>暴力启发式合并 从小到大合并子树信息 - 玉子的饼藏</title>
       
     
     
@@ -157,7 +157,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              暴力启发式合并 合并子树信息
+              暴力启发式合并 从小到大合并子树信息
             
           </span>
         </div>
@@ -1023,9 +1023,23 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        暴力启发式合并 合并子树信息
+        暴力启发式合并 从小到大合并子树信息
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9A%B4%E5%8A%9B%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6%20%E4%BB%8E%E9%87%8D%E5%84%BF%E5%AD%90%E5%BC%80%E5%A7%8B%E5%90%88%E5%B9%B6/" class="md-nav__link">
+        暴力启发式合并 从重儿子开始合并
+      </a>
     </li>
   
 
@@ -1874,12 +1888,13 @@
   
 
 
-<h1 id="_1"><a href="https://codeforces.com/problemset/problem/600/E">暴力启发式合并 合并子树信息</a></h1>
+<h1 id="_1"><a href="https://codeforces.com/problemset/problem/600/E">暴力启发式合并 从小到大合并子树信息</a></h1>
 <p>有一颗树，根节点为 <span class="arithmatex">\(1\)</span></p>
 <p>有 <span class="arithmatex">\(n\)</span> 个节点，每个节点都有不同的颜色</p>
 <p>问每一个节点，以该节点为根的子树中出现最多次的颜色有哪些？</p>
 <hr />
 <p>考虑暴力启发式合并，按子节点的子树大小来排序子树，将数量少的合并到数量大，将颜色数也合并上去</p>
+<p><strong>从小到大合并上去</strong></p>
 <p>时间复杂度是：<span class="arithmatex">\(n \log(n)\)</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
