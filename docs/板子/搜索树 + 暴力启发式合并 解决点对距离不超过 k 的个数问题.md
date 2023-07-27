@@ -1,16 +1,15 @@
-# [搜索树 + 暴力启发式合并 解决点对距离不超过 k 的个数问题]()
+# [搜索树 + 暴力启发式合并 解决点对距离不超过 k 的个数问题](https://www.luogu.com.cn/problem/P4178)
 
 ```c++
 #include <iostream>
 #include <vector>
 #include <ctime>
 
-const long long N = 5e4;
+const long long N = 2e6;
 long long n, m;
 long long g[N], e[N], ne[N], w[N], ant;
 long long hson[N], hsonw[N], size[N];
 long long ans;
-long long out = 1;
 class FHQ
 {
 private:
@@ -20,10 +19,10 @@ private:
     std::vector<long long> ls, rs;
     std::vector<long long> size;
     std::vector<long long> space;
-    
+
     long long ant;
     long long root;
-    
+
 public:  
 
     FHQ(long long N = 2e6) : _size_(N), 
@@ -34,20 +33,20 @@ public:
     ant(0), root(0)
     {
         srand(time(0));
-        
+
         for (long long i = 1; i < _size_ - 10; i ++)
         {
             space[++ ant] = i;
         }
     }
-    
+
 private:
 
     long long get()
     {
         return space[ant --];
     }
-    
+
     void del(long long pos)
     {
         val[pos] = 0; key[pos] = 0;
@@ -55,13 +54,13 @@ private:
         size[pos] = 0;
         space[++ ant] = pos;
     }
-    
+
     void push_up(long long rt)
     {
         if (rt == 0) return;
         size[rt] = 1 + size[ls[rt]] + size[rs[rt]];
     }
-    
+
     void split(long long rt, long long x, long long& l, long long& r)
     {
         if (rt == 0) { l = r = 0; return; }
@@ -78,7 +77,7 @@ private:
         push_up(l);
         push_up(r);
     }
-    
+
     void meld(long long& rt, long long l, long long r)
     {
         if (l == 0 || r == 0)
@@ -87,7 +86,7 @@ private:
             push_up(rt);
             return;
         }
-        
+
         if (key[l] >= key[r])
         {
             rt = l;
@@ -98,10 +97,10 @@ private:
             rt = r;
             meld(ls[rt], l, ls[rt]);
         }
-        
+
         push_up(rt);
     }
-    
+
     // 查找第 k 大
     long long kth(long long root, long long k)
     {
@@ -133,7 +132,7 @@ public:
         meld(root, l, p);
         meld(root, root, r);
     }
-    
+
     // 删除一个元素 x
     void erase(long long x)
     {
@@ -156,7 +155,7 @@ public:
     {
         return size[root];
     }
-    
+
     // 比 x 小的元素个数
     long long nleft(long long x)
     {
@@ -166,59 +165,59 @@ public:
         meld(root, l, r);
         return res;
     }
-    
+
     // 比 x 小或等的元素个数
     long long nleq(long long x)
     {
         return nleft(x + 1);
     }
-    
+
     // 比 x 大的元素个数
     long long nright(long long x)
     {
         return length() - nleq(x);
     }
-    
+
     // 比 x 大或等的元素个数
     long long nreq(long long x)
     {
         return length() - nleft(x);
     }
-    
+
     // 查找第 k 大
     long long knum(long long k)
     {
         if (k > length()) exit(1);
         return kth(root, k);
     }
-    
+
     // 删除第 k 大
     void dknum(long long k)
     {
         if (k > length()) exit(1);
         erase(knum(k));
     }
-    
+
     void clear()
     {
         clear(root);
         root = 0;
     }
-    
+
     // 查找左边第一个比 x 小的数
     long long pre(long long x)
     {
         if (nleft(x) == 0) exit(1);
         return knum(nleft(x));
     }
-    
+
     // 查找右边第一个比 x 大的数
     long long nxt(long long x)
     {
         if (nleq(x) == length()) exit(1);
         return knum(nleq(x) + 1);
     }
-    
+
     // 统计 l <= x <= r 的元素个数
     long long count(long long l, long long r)
     {
@@ -230,7 +229,7 @@ public:
         meld(root, root, z);
         return t;
     }
-    
+
     // 删除 l <= x <= r 的区间
     void del(long long l, long long r)
     {
@@ -240,7 +239,7 @@ public:
         clear(y);
         meld(root, x, z);
     }
-    
+
     // 删除 <= x 的一段
     void del_pre(long long x)
     {
@@ -250,7 +249,7 @@ public:
         l = 0;
         meld(root, l, r);
     }
-    
+
     // 删除 >= x 的一段
     void del_post(long long x)
     {
@@ -321,7 +320,7 @@ void dfs_2(long long u, long long v, long long keep)
         if (e[i] == v || e[i] == hson[u]) continue;
         dfs_2(e[i], u, 0);
     }
-    
+
     if (hson[u])
     {
         dfs_2(hson[u], u, 1);
@@ -330,7 +329,7 @@ void dfs_2(long long u, long long v, long long keep)
         set.del_post(m - sum + 1);
         ans += set.length();
     }
-    
+
     for (long long i = g[u]; i; i = ne[i])
     {
         if (e[i] == v) continue;
@@ -338,7 +337,7 @@ void dfs_2(long long u, long long v, long long keep)
         find_ans(e[i], u, w[i]);
         add_path(e[i], u, w[i]);
     }
-    
+
     if (keep == 0)
     {
         set.clear();
@@ -348,20 +347,19 @@ void dfs_2(long long u, long long v, long long keep)
 
 void solve()
 {
-    std::cin >> n >> m;
-    
-    // if (n > 5000) exit(0);
-    
-    if (n == 0 && m == 0) {out = 0; return;}
+    std::cin >> n;
+
     for (long long i = 1; i < n; i ++)
     {
         long long x, y, z; std::cin >> x >> y >> z;
         add(x, y, z); add(y, x, z);
     }
     
+    std::cin >> m;
+
     dfs_1(1, 0);
     dfs_2(1, 0, 1);
-    
+
     std::cout << ans << '\n';
 }
 
@@ -369,8 +367,8 @@ int main()
 {
     std::ios::sync_with_stdio(0);
     std::cin.tie(0); std::cout.tie(0);
-    
-    while (out) solve();
+
+    solve();
     return 0;
 }
 ```
