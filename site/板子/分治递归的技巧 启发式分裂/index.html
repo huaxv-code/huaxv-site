@@ -2002,7 +2002,7 @@
 
 <h1 id="_1"><a href="http://oj.daimayuan.top/course/15/problem/613">分治递归的技巧 启发式分裂</a></h1>
 <p>如果一个元素 <span class="arithmatex">\(a[i]\)</span> 距离左边最近的下标为 <span class="arithmatex">\(pre\)</span> 距离右边最近的下标为 <span class="arithmatex">\(nxt\)</span></p>
-<p>对于区间 <span class="arithmatex">\([l, r]\)</span> 来说，如果 <span class="arithmatex">\(pre &lt; l &amp;&amp; r &lt; nxt\)</span> 那么 <span class="arithmatex">\(a[i]\)</span> 在该区间中只出现过一次，并且该区间的所有子区间只要保护元素 <span class="arithmatex">\(a[i]\)</span> 都是好区间！</p>
+<p>对于区间 <span class="arithmatex">\([l, r]\)</span> 来说，如果 <span class="arithmatex">\(\pre &lt; l &amp;&amp; r &lt; \nxt\)</span> 那么 <span class="arithmatex">\(a[i]\)</span> 在该区间中只出现过一次，并且该区间的所有子区间只要保护元素 <span class="arithmatex">\(a[i]\)</span> 都是好区间！</p>
 <p>对于不包含元素 <span class="arithmatex">\(a[i]\)</span> 的区间 <span class="arithmatex">\([l, i - 1]\)</span> 和 <span class="arithmatex">\([i + 1, r]\)</span> 来说，需要在起一轮判断；</p>
 <p>每一轮判断都需要枚举区间 <span class="arithmatex">\([l, r]\)</span> 我们要想办法枚举最少的元素找到满足条件的分界点 <span class="arithmatex">\(i\)</span></p>
 <p>这叫启发式分裂，虽然还是会有 <span class="arithmatex">\(n\)</span> 层递归，但是时间复杂度能稳定在 <span class="arithmatex">\(n \sim n \log(n)\)</span></p>
