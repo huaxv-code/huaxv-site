@@ -6,7 +6,6 @@
     {
         "editor.fontSize": 24,
         "terminal.integrated.fontSize": 24,
-        "workbench.iconTheme": "material-icon-theme",
         "code-runner.executorMapByFileExtension": {
             ".yml": "push setting",
             ".md": "push $fileName",
@@ -46,15 +45,15 @@
 
             "javascript": "node",
 
-            // "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-            // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-            // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-            // "python": "python -u",
+            // "java": "cd $dir && javac $fileName && start cmd /k java $fileNameWithoutExt",
+            // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && start cmd /k  $dir$fileNameWithoutExt",
+            // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && start cmd /k  $dir$fileNameWithoutExt",
+            // "python": "start cmd /k  python -u",
 
-            "java": "running_code.bat $dir java $fileNameWithoutExt",
-            "c": "running_code.bat $dir c $fileNameWithoutExt",
-            "cpp": "running_code.bat $dir cpp $fileNameWithoutExt",
-            "python": "running_code.bat $dir py $fileNameWithoutExt",
+            "java": "check $dir java $fileNameWithoutExt",
+            "c": "check $dir c $fileNameWithoutExt",
+            "cpp": "check $dir cpp $fileNameWithoutExt",
+            "python": "check $dir py $fileNameWithoutExt",
 
             "zig": "zig run",
             "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -114,17 +113,13 @@
             "typescript": ".ts"
         },
         "workbench.startupEditor": "none",
-        "editor.stickyScroll.enabled": true,
+        // "editor.stickyScroll.enabled": true,
         "cph.general.defaultLanguage": "cpp",
-        "cph.general.timeOut": 7000,
-        "cph.language.cpp.Args": "-w -std=c++20 -static -O2 -Wall -Wextra -Wl,--stack=549453824",
-        "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
+        "cph.language.cpp.Args": "-w -std=c++17 -static -O2 -Wall -Wextra -Wl,--stack=549453824",
         "cph.general.retainWebviewContext": true,
-        "cph.general.ignoreSTDERROR": true,
         "update.enableWindowsBackgroundUpdates": false,
         "update.showReleaseNotes": false,
         "extensions.autoCheckUpdates": false,
-        "workbench.colorTheme": "Community Material Theme Palenight",
         "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
         "editor.fontLigatures": true,
 
@@ -139,10 +134,25 @@
         "editor.acceptSuggestionOnEnter": "off",
         "explorer.confirmDelete": false,
         "editor.trimAutoWhitespace": false,
-        // ----------------------------
-
-
-
+        "cph.language.java.Args": "-encoding utf8",
+        "settingsSync.ignoredExtensions": [
+            "ms-vsliveshare.vsliveshare"
+        ],
+        "workbench.colorTheme": "Solarized Light",
+        // "update.mode": "none",
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/Thumbs.db": true,
+            "**/*.exe": true, // 忽视文件 *.exe
+        },
+        "terminal.integrated.windowsEnableConpty": false,
+        "cph.general.timeOut": 5000,
+        "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+        "workbench.sideBar.location": "right",
     }
     ```
 
