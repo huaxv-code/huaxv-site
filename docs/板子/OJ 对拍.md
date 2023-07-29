@@ -422,6 +422,6 @@ namespace random
 
 ```
 
-## 打包下载
+## [打包下载](https://raw.githubusercontent.com/huaxv-code/huaxv-site/main/OJ.zip)
 
-[]()
+[打包下载](https://raw.githubusercontent.com/huaxv-code/huaxv-site/main/OJ.zip)
