@@ -199,6 +199,9 @@ nav:
     - bellman-ford 求最多经过 k 条边的最短路径: 板子/bellman-ford 求最多经过 k 条边的最短路径.md
     - spfa 求含有负边权的最短路径: 板子/spfa 求含有负边权的最短路径.md
 
+  - 补题:
+    - 神 tm 搜索树: 补题/神 tm 搜索树.md
+
   - MySQL:
     - 入门命令: MySQL/入门命令.md
 
