@@ -144,6 +144,7 @@ nav:
 
     - 快读: 板子/快读.md
     - 快输: 板子/快输.md
+    - __int128: 板子/__int128.md
     
     - lowbit: 板子/lowbit.md
 
