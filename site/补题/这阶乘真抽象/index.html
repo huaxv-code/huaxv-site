@@ -2244,9 +2244,9 @@
 <hr />
 <p>先不考虑题目那么复杂的东西，先思考简单的：<span class="arithmatex">\(n!\)</span> 有多少个 <span class="arithmatex">\(0\)</span> 结尾呢？</p>
 <p>统计 <span class="arithmatex">\(1 * 2 * 3 * \cdots * n\)</span> 总共可以切割成多少个 <span class="arithmatex">\(5\)</span> 相乘？</p>
-<p>假设可以切割出 <span class="arithmatex">\(a\)</span> 个 <span class="arithmatex">\(5\)</span> 和 <span class="arithmatex">\(b\)</span> 个 <span class="arithmatex">\(2\)</span>，可以肯定 <span class="arithmatex">\(b \leq a\)</span> 一定成立，所以末尾 <span class="arithmatex">\(0\)</span> 的个数只与 <span class="arithmatex">\(a\)</span> 的个数有关！</p>
+<p>假设可以切割出 <span class="arithmatex">\(a\)</span> 个 <span class="arithmatex">\(5\)</span> 和 <span class="arithmatex">\(b\)</span> 个 <span class="arithmatex">\(2\)</span>，可以肯定 <span class="arithmatex">\(a \leq b\)</span> 一定成立，所以末尾 <span class="arithmatex">\(0\)</span> 的个数只与 <span class="arithmatex">\(a\)</span> 的个数有关！</p>
 <p>怎么样求出 <span class="arithmatex">\(n!\)</span> 内有多少个 <span class="arithmatex">\(5\)</span> 相乘呢？</p>
-<p>给出代码如下，核心实现是统计 <span class="arithmatex">\(5\)</span> 次方的倍数和，时间复杂度：<span class="arithmatex">\(O(log_5(n))\)</span></p>
+<p>给出代码如下，核心思想是统计 <span class="arithmatex">\(5\)</span> 次方的倍数和，时间复杂度：<span class="arithmatex">\(O(log_5(n))\)</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// 计算阶乘中 5 的个数</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">hh</span><span class="w"> </span><span class="nf">calc</span><span class="p">(</span><span class="n">hh</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">hh</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
@@ -2305,7 +2305,7 @@
 <a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
 <a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>然后就可以求出贡献：
 <a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>(t - 1) * t / 2 * t + (t + 1 + bool(t 是质数)) * t / 2 / 2
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>(t - 1) * t / 2 * t + (t + 1 + bool(t 是偶数)) * t / 2 / 2
 <a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
 <a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>接下来就可以对剩余部分讨论
 <a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
