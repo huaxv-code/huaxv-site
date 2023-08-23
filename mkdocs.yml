@@ -277,6 +277,8 @@ nav:
     - tmux 使用: Linux/tmux 使用.md
     - vim 使用手册: Linux/vim 使用手册.md
     - bash 使用: Linux/bash 使用.md
+    - ssh 连接 github: Linux/ssh 连接 github.md
+    - window 使用 ssh 连接 linux: Linux/window 使用 ssh 连接 linux.md
     
     
   - 每日英语:
